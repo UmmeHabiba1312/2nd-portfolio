@@ -1,0 +1,143 @@
+.container {
+    padding: 2rem;
+    background: linear-gradient(135deg, #1a1a1a, #ff8c00); /* Dark Gray to Orange */
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .textContainer {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #ff8c00;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+  }
+  
+  .image {
+    width: 300px; /* Ensures the image adjusts to the parent container */
+    height: 300px;
+    border-radius: 50%; /* Keeps the circular shape */
+    border: 5px solid #ff8c00;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+    object-position: top center; /* Adjusts focus to the top of the image */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .imageContainer {
+    width: 300px; /* Circle's fixed size */
+    height: 300px; /* Circle's fixed size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures only the image inside the circle is visible */
+    /* border-radius: 50%; Circular frame */
+    /* border: 5px solid #ff8c00; */
+  }
+  
+  
+  /* Skills Section */
+  .skillsContainer {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .skillsTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #ff8c00;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .skillsList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .skillsList li {
+    background: linear-gradient(135deg, #ff8c00, #ff6200); /* Gradient for tags */
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0px 6px 15px rgba(255, 140, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skillsList li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(255, 98, 0, 0.5);
+  }
+  
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      text-align: left;
+      gap: 3rem;
+    }
+  
+    .textContainer {
+      flex: 1.5;
+    }
+  
+    .imageContainer {
+      flex: 1;
+    }
+  
+    .description {
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .title {
+      font-size: 2.2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .skillsList {
+      font-size: 0.9rem;
+    }
+  }
+  

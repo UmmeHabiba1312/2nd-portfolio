@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000; /* Black background */
+    color: #ffa500; /* Orange text */
+    padding: 2rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .textSection {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .button {
+    background-color: #ffa500; /* Orange background */
+    color: #000; /* Black text */
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff7f00; /* Darker orange */
+    transform: scale(1.05); /* Slight zoom */
+  }
+  
+  .imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.5); /* Orange glow */
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column-reverse; /* Stack image and text */
+      text-align: center;
+    }
+  
+    .textSection {
+      padding: 1rem 0;
+    }
+  
+    .image {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+  }
+  
+  h1, h2, h3 {
+    color: #ffa500; /* Orange color */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffa500;
+  }
+  
+  nav {
+    background-color: #ffa500; /* Orange navbar */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    color: black; /* Black text */
+    font-weight: bold;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: white; /* Highlight text on hover */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  

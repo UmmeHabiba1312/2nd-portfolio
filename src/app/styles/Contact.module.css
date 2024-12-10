@@ -1,0 +1,106 @@
+/* Overall container styling */
+.container {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  /* Content Wrapper to hold all elements in the center */
+  .contentWrapper {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Heading styling */
+  .heading {
+    text-align: center;
+    color: #ffa500;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Intro text styling */
+  .intro {
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Input group styling */
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .input::placeholder,
+  .textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* Textarea specific styling */
+  .textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  /* Button styling */
+  .button {
+    background-color: #ffa500;
+    color: #000;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #ff8c00;
+    transform: scale(1.05);
+  }
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .intro {
+      font-size: 1rem;
+    }
+  }
+  
